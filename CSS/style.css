@@ -83,6 +83,7 @@ body {
   margin: auto;
   padding: 1rem;
   width: 150px;
+  cursor: pointer;
 }
 
 .form>.btns>button[type="reset"] {
@@ -94,8 +95,23 @@ body {
   margin: auto;
   width: 150px;
   padding: 1rem;
+  cursor: pointer;
 }
 
+#resultado{
+  margin-top: .5rem;
+  text-align: center;
+}
+#resultado > p{
+  padding: .5rem;
+}
+.paragrafo-resultado{
+  background-color: greenyellow;
+}
+.bad{
+  background: red;
+}
+/* media queries */
 @media (min-width: 768px) {
     .container{
       width: auto;
