@@ -21,7 +21,7 @@ body {
 /* components style */
 .container {
   background: white;
-  width: 25vw;
+  width: 45vw;
   padding: 2rem;
   border-radius: 14px;
 }
@@ -94,4 +94,53 @@ body {
   margin: auto;
   width: 150px;
   padding: 1rem;
+}
+
+@media (min-width: 768px) {
+    .container{
+      width: auto;
+    }
+    .container>.tableIMC{
+      column-gap: 2rem;
+    }
+}
+
+@media (min-width: 580px) and (max-width:767px){
+  .container{
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+  }
+  .container>.tableIMC{
+    column-gap: 2rem;
+  }
+}
+
+@media (max-width: 579px) {
+  .container{
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .container>.tableIMC{
+    padding: 1rem;
+  }
+  .container>.tableIMC>.line>p{
+    font-size: 1rem;
+  }
+  .container>.form{
+    padding: 1rem;
+  }
+  .form>.btns>button{
+    width: 100px!important;
+    font-size: .8rem!important;
+  }
+  .container>.tableIMC{
+    column-gap: 2rem;
+  }
 }
